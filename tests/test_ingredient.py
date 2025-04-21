@@ -2,6 +2,7 @@
 import pytest
 from praktikum.ingredient import Ingredient
 
+@pytest.mark.ingredients
 class TestIngredient:
 
     def test_ingredient_give_name_price_type(self):

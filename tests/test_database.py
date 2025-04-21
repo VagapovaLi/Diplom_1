@@ -2,7 +2,7 @@ import pytest
 from praktikum.database import Database
 from praktikum.ingredient import Ingredient
 
-
+@pytest.mark.databases
 class TestDatabase:
 
     @pytest.mark.parametrize("expected_bun", [
