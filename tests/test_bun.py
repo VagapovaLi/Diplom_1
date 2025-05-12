@@ -2,11 +2,20 @@ import pytest
 
 from praktikum.bun import Bun
 
+@pytest.mark.buns
 class TestBun:
-    @pytest.mark.buns
-    def test_buns_give_name_and_price(self):
+
+
+    def test_set_name_for_bun(self):
         name ='Соевая булка'
         price = 10
         bun = Bun(name,price)
         assert bun.get_name() == name
+
+
+
+    def test_set_price_for_bun(self):
+        name ='Соевая булка'
+        price = 10
+        bun = Bun(name,price)
         assert bun.get_price() == price
