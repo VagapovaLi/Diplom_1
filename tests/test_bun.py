@@ -1,5 +1,4 @@
 import pytest
-
 from praktikum.bun import Bun
 
 @pytest.mark.buns
@@ -11,8 +10,6 @@ class TestBun:
         price = 10
         bun = Bun(name,price)
         assert bun.get_name() == name
-
-
 
     def test_set_price_for_bun(self):
         name ='Соевая булка'
